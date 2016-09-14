@@ -3,7 +3,7 @@ package multiclient
 import (
 	"testing"
 
-	"github.com/hailocab/protobuf/proto"
+	"github.com/HailoOSS/protobuf/proto"
 
 	"github.com/HailoOSS/platform/client"
 	"github.com/HailoOSS/platform/errors"
@@ -13,7 +13,7 @@ import (
 )
 
 const (
-	mockFooService     = "com.hailocab.service.foo"
+	mockFooService     = "com.HailoOSS.service.foo"
 	mockHealthEndpoint = "health"
 )
 

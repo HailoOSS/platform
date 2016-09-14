@@ -1,4 +1,4 @@
-package com.hailocab.kernel.platform.loadedconfig;
+package com.HailoOSS.kernel.platform.loadedconfig;
 
 message Request {
 	

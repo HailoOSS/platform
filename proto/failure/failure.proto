@@ -1,4 +1,4 @@
-package com.hailocab.kernel.platform.failure;
+package com.HailoOSS.kernel.platform.failure;
 
 message Failure {
 	required string serviceName = 1;

@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/hailocab/protobuf/proto"
+	"github.com/HailoOSS/protobuf/proto"
 
 	perrors "github.com/HailoOSS/platform/errors"
 )

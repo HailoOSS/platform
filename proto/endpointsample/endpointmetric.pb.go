@@ -3,7 +3,7 @@
 // DO NOT EDIT!
 
 /*
-Package com_hailocab_kernel_platform_endpointmetrics is a generated protocol buffer package.
+Package com_HailoOSS_kernel_platform_endpointmetrics is a generated protocol buffer package.
 
 It is generated from these files:
 	github.com/HailoOSS/platform/proto/endpointsample/endpointmetric.proto
@@ -12,9 +12,9 @@ It has these top-level messages:
 	EndpointMetrics
 	EndpointSample
 */
-package com_hailocab_kernel_platform_endpointmetrics
+package com_HailoOSS_kernel_platform_endpointmetrics
 
-import proto "github.com/hailocab/protobuf/proto"
+import proto "github.com/HailoOSS/protobuf/proto"
 import json "encoding/json"
 import math "math"
 

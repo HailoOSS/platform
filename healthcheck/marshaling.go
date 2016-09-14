@@ -2,7 +2,7 @@ package healthcheck
 
 import (
 	hcproto "github.com/HailoOSS/platform/proto/healthcheck"
-	"github.com/hailocab/protobuf/proto"
+	"github.com/HailoOSS/protobuf/proto"
 )
 
 func healthCheckSampleToProto(hc *HealthCheck, sample *Sample) *hcproto.HealthCheck {

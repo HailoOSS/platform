@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	log "github.com/cihub/seelog"
-	"github.com/hailocab/protobuf/proto"
+	"github.com/HailoOSS/protobuf/proto"
 	"github.com/streadway/amqp"
 
 	"github.com/HailoOSS/platform/client"
@@ -50,7 +50,7 @@ func (self *Request) MessageID() string {
 }
 
 // Destination returns the name of the server and endpoint that the request was directed
-// at, for example: com.hailocab.service.customer.retrieve
+// at, for example: com.HailoOSS.service.customer.retrieve
 func (self *Request) Destination() string {
 	return fmt.Sprintf("%s.%s", self.Service(), self.Endpoint())
 }

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	log "github.com/cihub/seelog"
 	"github.com/HailoOSS/platform/errors"
-	"github.com/hailocab/protobuf/proto"
+	"github.com/HailoOSS/protobuf/proto"
 	"github.com/streadway/amqp"
 )
 

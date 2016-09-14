@@ -3,7 +3,7 @@
 // DO NOT EDIT!
 
 /*
-Package com_hailocab_kernel_platform_trace is a generated protocol buffer package.
+Package com_HailoOSS_kernel_platform_trace is a generated protocol buffer package.
 
 It is generated from these files:
 	github.com/HailoOSS/platform/proto/trace/trace.proto
@@ -11,9 +11,9 @@ It is generated from these files:
 It has these top-level messages:
 	Event
 */
-package com_hailocab_kernel_platform_trace
+package com_HailoOSS_kernel_platform_trace
 
-import proto "github.com/hailocab/protobuf/proto"
+import proto "github.com/HailoOSS/protobuf/proto"
 import json "encoding/json"
 import math "math"
 
@@ -73,7 +73,7 @@ func (x *Event_Type) UnmarshalJSON(data []byte) error {
 type Event struct {
 	Timestamp         *int64      `protobuf:"varint,1,req,name=timestamp" json:"timestamp,omitempty"`
 	TraceId           *string     `protobuf:"bytes,2,req,name=traceId" json:"traceId,omitempty"`
-	Type              *Event_Type `protobuf:"varint,3,req,name=type,enum=com.hailocab.kernel.platform.trace.Event_Type" json:"type,omitempty"`
+	Type              *Event_Type `protobuf:"varint,3,req,name=type,enum=com.HailoOSS.kernel.platform.trace.Event_Type" json:"type,omitempty"`
 	MessageId         *string     `protobuf:"bytes,4,opt,name=messageId" json:"messageId,omitempty"`
 	ParentMessageId   *string     `protobuf:"bytes,5,opt,name=parentMessageId" json:"parentMessageId,omitempty"`
 	From              *string     `protobuf:"bytes,6,opt,name=from" json:"from,omitempty"`
@@ -209,5 +209,5 @@ func (m *Event) GetPersistentTrace() bool {
 }
 
 func init() {
-	proto.RegisterEnum("com.hailocab.kernel.platform.trace.Event_Type", Event_Type_name, Event_Type_value)
+	proto.RegisterEnum("com.HailoOSS.kernel.platform.trace.Event_Type", Event_Type_name, Event_Type_value)
 }

@@ -3,7 +3,7 @@
 // DO NOT EDIT!
 
 /*
-Package com_hailocab_kernel_platform_profilestart is a generated protocol buffer package.
+Package com_HailoOSS_kernel_platform_profilestart is a generated protocol buffer package.
 
 It is generated from these files:
 	github.com/HailoOSS/platform/proto/profilestart/profilestart.proto
@@ -12,9 +12,9 @@ It has these top-level messages:
 	Request
 	Response
 */
-package com_hailocab_kernel_platform_profilestart
+package com_HailoOSS_kernel_platform_profilestart
 
-import proto "github.com/hailocab/protobuf/proto"
+import proto "github.com/HailoOSS/protobuf/proto"
 import json "encoding/json"
 import math "math"
 
@@ -100,8 +100,8 @@ func (x *ProfileType) UnmarshalJSON(data []byte) error {
 
 type Request struct {
 	Id               *string      `protobuf:"bytes,1,opt,name=id" json:"id,omitempty"`
-	Type             *ProfileType `protobuf:"varint,2,opt,name=type,enum=com.hailocab.kernel.platform.profilestart.ProfileType" json:"type,omitempty"`
-	Output           *Output      `protobuf:"varint,3,opt,name=output,enum=com.hailocab.kernel.platform.profilestart.Output" json:"output,omitempty"`
+	Type             *ProfileType `protobuf:"varint,2,opt,name=type,enum=com.HailoOSS.kernel.platform.profilestart.ProfileType" json:"type,omitempty"`
+	Output           *Output      `protobuf:"varint,3,opt,name=output,enum=com.HailoOSS.kernel.platform.profilestart.Output" json:"output,omitempty"`
 	XXX_unrecognized []byte       `json:"-"`
 }
 
@@ -139,6 +139,6 @@ func (m *Response) String() string { return proto.CompactTextString(m) }
 func (*Response) ProtoMessage()    {}
 
 func init() {
-	proto.RegisterEnum("com.hailocab.kernel.platform.profilestart.Output", Output_name, Output_value)
-	proto.RegisterEnum("com.hailocab.kernel.platform.profilestart.ProfileType", ProfileType_name, ProfileType_value)
+	proto.RegisterEnum("com.HailoOSS.kernel.platform.profilestart.Output", Output_name, Output_value)
+	proto.RegisterEnum("com.HailoOSS.kernel.platform.profilestart.ProfileType", ProfileType_name, ProfileType_value)
 }

@@ -3,7 +3,7 @@ package server
 import (
 	"testing"
 
-	"github.com/hailocab/protobuf/proto"
+	"github.com/HailoOSS/protobuf/proto"
 	"github.com/streadway/amqp"
 	"github.com/stretchr/testify/assert"
 
@@ -29,7 +29,7 @@ type EndpointSuite struct {
 
 func (suite *EndpointSuite) SetupTest() {
 	suite.origName = Name
-	Name = "com.hailocab.service.foo"
+	Name = "com.HailoOSS.service.foo"
 	suite.origRegistry = reg
 	suite.registry = newRegistry()
 	reg = suite.registry

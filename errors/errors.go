@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/facebookgo/stack"
-	"github.com/hailocab/protobuf/proto"
+	"github.com/HailoOSS/protobuf/proto"
 
 	pe "github.com/HailoOSS/platform/proto/error"
 )
@@ -53,7 +53,7 @@ func (self LocalError) Type() string {
 	return self.errorType
 }
 
-// Code returns the error code, e.g. com.hailocab.service.something.went.wrong
+// Code returns the error code, e.g. com.HailoOSS.service.something.went.wrong
 func (self LocalError) Code() string {
 	return self.code
 }

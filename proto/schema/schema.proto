@@ -1,4 +1,4 @@
-package com.hailocab.kernel.platform.schema;
+package com.HailoOSS.kernel.platform.schema;
 
 message Request {	
 }

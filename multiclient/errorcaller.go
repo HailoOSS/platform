@@ -1,7 +1,7 @@
 package multiclient
 
 import (
-	"github.com/hailocab/protobuf/proto"
+	"github.com/HailoOSS/protobuf/proto"
 
 	"github.com/HailoOSS/platform/client"
 	"github.com/HailoOSS/platform/errors"

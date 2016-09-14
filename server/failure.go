@@ -13,7 +13,7 @@ import (
 	"github.com/HailoOSS/service/nsq"
 
 	fproto "github.com/HailoOSS/platform/proto/failure"
-	"github.com/hailocab/protobuf/proto"
+	"github.com/HailoOSS/protobuf/proto"
 )
 
 var (
@@ -37,7 +37,7 @@ func publishFailure(r interface{}) {
 	b := make([]byte, 1024)
 	runtime.Stack(b, true)
 
-	if err := client.Pub("com.hailocab.monitor.failure", &fproto.Failure{
+	if err := client.Pub("com.HailoOSS.monitor.failure", &fproto.Failure{
 		ServiceName:    proto.String(Name),
 		ServiceVersion: proto.Uint64(Version),
 		AzName:         proto.String(az),

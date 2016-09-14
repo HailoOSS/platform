@@ -7,7 +7,7 @@ import (
 	"time"
 
 	log "github.com/cihub/seelog"
-	"github.com/hailocab/protobuf/proto"
+	"github.com/HailoOSS/protobuf/proto"
 
 	errors "github.com/HailoOSS/platform/errors"
 	"github.com/HailoOSS/platform/stats"
@@ -94,7 +94,7 @@ func tokenConstrainedMiddleware(ep *Endpoint, h Handler) Handler {
 			inst.Gauge(1.0, tokenBucketName, len(tokC))
 			inst.Counter(1.0, "server.error.capacity", 1)
 
-			return nil, errors.InternalServerError("com.hailocab.kernel.server.capacity",
+			return nil, errors.InternalServerError("com.HailoOSS.kernel.server.capacity",
 				fmt.Sprintf("Server %v out of capacity", Name))
 		}
 	}

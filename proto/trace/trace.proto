@@ -1,4 +1,4 @@
-package com.hailocab.kernel.platform.trace;
+package com.HailoOSS.kernel.platform.trace;
 
 message Event {
 	enum Type {

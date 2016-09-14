@@ -5,7 +5,7 @@ import (
 	"sync"
 
 	log "github.com/cihub/seelog"
-	"github.com/hailocab/protobuf/proto"
+	"github.com/HailoOSS/protobuf/proto"
 	"github.com/streadway/amqp"
 	"github.com/stretchr/testify/mock"
 
@@ -79,7 +79,7 @@ func (m *MockClient) Req(req *Request, rsp proto.Message, options ...Options) ha
 		return nil
 	} else {
 		log.Warnf("[Service client mock] Couldn't match response for %s:%s", req.Service(), req.Endpoint())
-		return hailo_errors.InternalServerError("com.hailocab.kernel.platform.nilresponse", "Nil response")
+		return hailo_errors.InternalServerError("com.HailoOSS.kernel.platform.nilresponse", "Nil response")
 	}
 }
 
@@ -100,7 +100,7 @@ func (m *MockClient) CustomReq(req *Request, options ...Options) (*Response, hai
 		return &Response{resp}, nil
 	} else {
 		log.Warnf("[Service client mock] Couldn't match response for %s:%s", req.Service(), req.Endpoint())
-		return nil, hailo_errors.InternalServerError("com.hailocab.kernel.platform.nilresponse", "Nil response")
+		return nil, hailo_errors.InternalServerError("com.HailoOSS.kernel.platform.nilresponse", "Nil response")
 	}
 }
 

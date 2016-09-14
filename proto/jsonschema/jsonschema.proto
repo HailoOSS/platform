@@ -1,4 +1,4 @@
-package com.hailocab.kernel.platform.jsonschema;
+package com.HailoOSS.kernel.platform.jsonschema;
 
 message Request {
 	optional string endpoint = 1;

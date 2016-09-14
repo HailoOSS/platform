@@ -3,7 +3,7 @@
 // DO NOT EDIT!
 
 /*
-Package com_hailocab_kernel_platform_failure is a generated protocol buffer package.
+Package com_HailoOSS_kernel_platform_failure is a generated protocol buffer package.
 
 It is generated from these files:
 	github.com/HailoOSS/platform/proto/failure/failure.proto
@@ -11,9 +11,9 @@ It is generated from these files:
 It has these top-level messages:
 	Failure
 */
-package com_hailocab_kernel_platform_failure
+package com_HailoOSS_kernel_platform_failure
 
-import proto "github.com/hailocab/protobuf/proto"
+import proto "github.com/HailoOSS/protobuf/proto"
 import json "encoding/json"
 import math "math"
 

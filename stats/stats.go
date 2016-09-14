@@ -12,7 +12,7 @@ import (
 	"time"
 
 	log "github.com/cihub/seelog"
-	"github.com/hailocab/protobuf/proto"
+	"github.com/HailoOSS/protobuf/proto"
 	"github.com/nu7hatch/gouuid"
 	metrics "github.com/rcrowley/go-metrics"
 
@@ -67,7 +67,7 @@ type Endpoint interface {
 
 func init() {
 	// Set defaults for top level vars
-	ServiceName = "com.hailocab.unknown-service"
+	ServiceName = "com.HailoOSS.unknown-service"
 	ServiceVersion = 20140101000000
 	ServiceType = "h2.unknown"
 
@@ -244,7 +244,7 @@ func (s *stats) monitor() {
 
 // publish
 func (s *stats) publish(status string) {
-	if err := client.Pub("com.hailocab.monitor.stats", s.get(status)); err != nil {
+	if err := client.Pub("com.HailoOSS.monitor.stats", s.get(status)); err != nil {
 		log.Errorf("[Server] Failed to publish service monitoring stats: %v", err)
 	}
 }

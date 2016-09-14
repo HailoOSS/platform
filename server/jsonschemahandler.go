@@ -7,9 +7,9 @@ import (
 	"strings"
 
 	log "github.com/cihub/seelog"
-	"github.com/hailocab/protobuf/proto"
+	"github.com/HailoOSS/protobuf/proto"
 
-	jsonschema "github.com/hailocab/go-jsonschema"
+	jsonschema "github.com/HailoOSS/go-jsonschema"
 	"github.com/HailoOSS/platform/errors"
 	jsonschemaproto "github.com/HailoOSS/platform/proto/jsonschema"
 )
@@ -35,7 +35,7 @@ func jsonschemaHandler(req *Request) (proto.Message, errors.Error) {
 
 	rsp, err := json.Marshal(schemas)
 	if err != nil {
-		return nil, errors.InternalServerError("com.hailocab.kernel.marshal.error", fmt.Sprintf("Unable to unmarshal response data: %v", err.Error()))
+		return nil, errors.InternalServerError("com.HailoOSS.kernel.marshal.error", fmt.Sprintf("Unable to unmarshal response data: %v", err.Error()))
 	}
 
 	return &jsonschemaproto.Response{

@@ -1,4 +1,4 @@
-package com.hailocab.kernel.platform.endpointmetrics;
+package com.HailoOSS.kernel.platform.endpointmetrics;
 
 message EndpointMetrics {
 	required string serviceName = 1; // The name of the service

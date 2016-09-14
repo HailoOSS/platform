@@ -11,7 +11,7 @@ import (
 	"time"
 
 	log "github.com/cihub/seelog"
-	"github.com/hailocab/protobuf/proto"
+	"github.com/HailoOSS/protobuf/proto"
 	"github.com/mreiferson/go-httpclient"
 
 	"github.com/HailoOSS/platform/client"

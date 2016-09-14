@@ -1,4 +1,4 @@
-package com.hailocab.kernel.platform.error;
+package com.HailoOSS.kernel.platform.error;
 
 message PlatformError {
 	enum ErrorType {

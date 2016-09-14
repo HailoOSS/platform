@@ -1,12 +1,12 @@
 package schema
 
 import (
-	"github.com/hailocab/protobuf/proto"
+	"github.com/HailoOSS/protobuf/proto"
 
 	"github.com/HailoOSS/platform/errors"
 	"github.com/HailoOSS/platform/server"
 
-	"github.com/hailocab/go-hailo-lib/schema"
+	"github.com/HailoOSS/go-hailo-lib/schema"
 	schemaProto "github.com/HailoOSS/platform/proto/schema"
 	service "github.com/HailoOSS/platform/server"
 )

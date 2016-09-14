@@ -1,4 +1,4 @@
-package com.hailocab.kernel.platform.runtimesample;
+package com.HailoOSS.kernel.platform.runtimesample;
 
 message RuntimeSample {
 	required string serviceName = 1; // The service name

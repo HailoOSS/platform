@@ -4,7 +4,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/hailocab/go-hailo-lib/multierror"
+	"github.com/HailoOSS/go-hailo-lib/multierror"
 	"github.com/HailoOSS/platform/client"
 	"github.com/HailoOSS/platform/errors"
 )

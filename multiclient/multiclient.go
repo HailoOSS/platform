@@ -5,7 +5,7 @@ import (
 	"sync"
 
 	log "github.com/cihub/seelog"
-	"github.com/hailocab/protobuf/proto"
+	"github.com/HailoOSS/protobuf/proto"
 
 	"github.com/HailoOSS/platform/client"
 	"github.com/HailoOSS/platform/errors"
@@ -154,7 +154,7 @@ func (c *defClient) AddScopedReq(sr *ScopedReq) MultiClient {
 	c.responses[sr.Uid] = sr.Rsp
 	if err != nil {
 		c.errors.set(sr.Uid, clientReq,
-			errors.InternalServerError("com.hailocab.kernel.multirequest.badrequest", err.Error()), from)
+			errors.InternalServerError("com.HailoOSS.kernel.multirequest.badrequest", err.Error()), from)
 	} else {
 		clientReq.SetOptions(sr.Options)
 	}
@@ -193,7 +193,7 @@ func (c *defClient) Execute() MultiClient {
 		} else if req == nil {
 			log.Warnf("[Multiclient] Not expecting nil Request within MultiClient")
 			c.errors.set(uid, req, errors.InternalServerError(
-				"com.hailocab.kernel.multirequest.badrequest.nil",
+				"com.HailoOSS.kernel.multirequest.badrequest.nil",
 				fmt.Sprintf("Response for uid %s is nil", uid)), nil)
 			continue
 		}

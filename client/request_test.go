@@ -15,7 +15,7 @@ func (*TestPayload) String() string { return "" }
 func (*TestPayload) ProtoMessage()  {}
 
 func TestNewRequest(t *testing.T) {
-	testService := "com.hailocab.service.helloworld"
+	testService := "com.HailoOSS.service.helloworld"
 	testEndpoint := "sayhello"
 
 	payload := &TestPayload{}
@@ -65,7 +65,7 @@ func TestNewJsonRequest(t *testing.T) {
 }
 
 func TestShouldTrace(t *testing.T) {
-	testService := "com.hailocab.service.helloworld"
+	testService := "com.HailoOSS.service.helloworld"
 	testEndpoint := "sayhello"
 	payload := &TestPayload{}
 

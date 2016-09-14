@@ -3,7 +3,7 @@
 // DO NOT EDIT!
 
 /*
-Package com_hailocab_kernel_platform_healthcheck is a generated protocol buffer package.
+Package com_HailoOSS_kernel_platform_healthcheck is a generated protocol buffer package.
 
 It is generated from these files:
 	github.com/HailoOSS/platform/proto/healthcheck/healthcheck.proto
@@ -13,9 +13,9 @@ It has these top-level messages:
 	Request
 	Response
 */
-package com_hailocab_kernel_platform_healthcheck
+package com_HailoOSS_kernel_platform_healthcheck
 
-import proto "github.com/hailocab/protobuf/proto"
+import proto "github.com/HailoOSS/protobuf/proto"
 import json "encoding/json"
 import math "math"
 
@@ -73,7 +73,7 @@ type HealthCheck struct {
 	IsHealthy        *bool                   `protobuf:"varint,7,req,name=isHealthy" json:"isHealthy,omitempty"`
 	ErrorDescription *string                 `protobuf:"bytes,8,opt,name=errorDescription" json:"errorDescription,omitempty"`
 	Measurements     []*HealthCheck_KeyValue `protobuf:"bytes,9,rep,name=measurements" json:"measurements,omitempty"`
-	Priority         *HealthCheck_Priority   `protobuf:"varint,10,opt,name=priority,enum=com.hailocab.kernel.platform.healthcheck.HealthCheck_Priority,def=3" json:"priority,omitempty"`
+	Priority         *HealthCheck_Priority   `protobuf:"varint,10,opt,name=priority,enum=com.HailoOSS.kernel.platform.healthcheck.HealthCheck_Priority,def=3" json:"priority,omitempty"`
 	XXX_unrecognized []byte                  `json:"-"`
 }
 
@@ -202,5 +202,5 @@ func (m *Response) GetHealthchecks() []*HealthCheck {
 }
 
 func init() {
-	proto.RegisterEnum("com.hailocab.kernel.platform.healthcheck.HealthCheck_Priority", HealthCheck_Priority_name, HealthCheck_Priority_value)
+	proto.RegisterEnum("com.HailoOSS.kernel.platform.healthcheck.HealthCheck_Priority", HealthCheck_Priority_name, HealthCheck_Priority_value)
 }

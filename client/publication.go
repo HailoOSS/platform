@@ -3,7 +3,7 @@ package client
 import (
 	"fmt"
 
-	"github.com/hailocab/protobuf/proto"
+	"github.com/HailoOSS/protobuf/proto"
 	"github.com/nu7hatch/gouuid"
 )
 

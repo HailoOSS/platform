@@ -1,7 +1,7 @@
 package server
 
 import (
-	"github.com/hailocab/protobuf/proto"
+	"github.com/HailoOSS/protobuf/proto"
 
 	"github.com/HailoOSS/platform/errors"
 	"github.com/HailoOSS/platform/stats"
